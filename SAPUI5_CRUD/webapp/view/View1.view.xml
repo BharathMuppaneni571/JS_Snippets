@@ -1,0 +1,103 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="namespace.SAPUI5_CRUD.controller.View1" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<IconTabBar selectedKey="__filter1" id="bar0">
+							<items>
+								<IconTabFilter text="CREATE" icon="sap-icon://create" iconColor="Positive" id="filter1_1576910733517">
+									<content>
+										<sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" editable="true"
+											layout="ResponsiveGridLayout" id="form0">
+											<sap.ui.layout.form:content>
+												<Label text="ID" id="label0"/>
+												<Input width="100%" id="input0"/>
+												<Label text="RELEASE DATE" id="label1"/>
+												<DatePicker id="input1" value="" valueFormat="yyyy-MM-dd" displayFormat="long"/>
+												<!--<Input width="100%" id="input1"/>-->
+												<Label text="DISCONTINUED DATE" id="label2"/>
+												<DatePicker id="input2" value="" valueFormat="yyyy-MM-dd" displayFormat="long"/>
+												<!--<Input width="100%" id="input2"/>-->
+												<Label text="RATING" id="label3"/>
+												<RatingIndicator id="input3"/>
+												<Label text="PRICE" id="label4"/>
+												<Input width="100%" id="input4"/>
+												<Label text=""/>
+												<Button text="CREATE" width="15%" type="Accept" press="onCreate"/></sap.ui.layout.form:content>
+										</sap.ui.layout.form:SimpleForm>
+									</content>
+								</IconTabFilter>
+								<IconTabFilter text="READ" icon="sap-icon://create" id="filter111">
+									<content>
+										<sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" editable="true"
+											layout="ResponsiveGridLayout" id="form111">
+											<sap.ui.layout.form:content>
+												<Label text="ID" id="label112"/>
+												<Input width="100%" id="input113"/>
+												<Label text="RELEASE DATE" id="label14"/>
+												<DatePicker id="input115" value="{formatter: '.utils.formatter.dateDisplay'}" valueFormat="yyyy-MM-dd" displayFormat="long"/>
+												<!--<Input width="100%" id="input115"/>-->
+												<Label text="DISCONTINUED DATE" id="label116"/>
+												<DatePicker id="input117" value="" valueFormat="yyyy-MM-dd" displayFormat="long"/>
+												<!--<Input width="100%" id="input117"/>-->
+												<Label text="RATING" id="label18"/>
+												<RatingIndicator id="input119"/>
+												<Label text="PRICE" id="label110"/>
+												<Input width="100%" id="input1111"/>
+												<Label text=""/>
+												<Button text="READ / GET" width="15%" type="Default" press="onGet"/></sap.ui.layout.form:content>
+										</sap.ui.layout.form:SimpleForm>
+									</content>
+								</IconTabFilter>
+								<IconTabFilter text="UPDATE" icon="sap-icon://repost" iconColor="Critical" id="filter222">
+									<content>
+										<sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" editable="true"
+											layout="ResponsiveGridLayout" id="form221">
+											<sap.ui.layout.form:content>
+												<Label text="ID" id="label222"/>
+												<Input width="100%" id="input223"/>
+												<Label text="RELEASE DATE" id="label224"/>
+												<DatePicker id="input225" value="" valueFormat="yyyy-MM-dd" displayFormat="long"/>
+												<!--<Input width="100%" id="input225"/>-->
+												<Label text="DISCONTINUED DATE" id="label226"/>
+												<DatePicker id="input227" value="" valueFormat="yyyy-MM-dd" displayFormat="long"/>
+												<!--<Input width="100%" id="input227"/>-->
+												<Label text="RATING" id="label228"/>
+												<RatingIndicator id="input229"/>
+												<Label text="PRICE" id="label2210"/>
+												<Input width="100%" id="input2211"/>
+												<Label text=""/>
+												<Button text="Fetch" width="100%" type="Critical" press="onFetch"/>
+												<Button text="UPDATE" width="100%" type="Critical" press="onUpdate"/></sap.ui.layout.form:content>
+										</sap.ui.layout.form:SimpleForm>
+									</content>
+								</IconTabFilter>
+								<IconTabFilter text="DELETE" icon="sap-icon://sys-cancel" iconColor="Negative" id="filter333">
+									<content>
+										<sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" editable="true"
+											layout="ResponsiveGridLayout" id="form331">
+											<sap.ui.layout.form:content>
+												<Label text="ID" id="label332"/>
+												<Input width="100%" id="input333"/>
+												<Label text="RELEASE DATE" id="label334"/>
+												<Input width="100%" id="input335"/>
+												<Label text="DISCONTINUED DATE" id="label336"/>
+												<Input width="100%" id="input337"/>
+												<Label text="RATING" id="label338"/>
+												<RatingIndicator id="input339"/>
+												<Label text="PRICE" id="label3310"/>
+												<Input width="100%" id="input3311"/>
+												<Label text=""/>
+												<Button text="DELETE" width="100%" type="Negative" press="onDelete"/></sap.ui.layout.form:content>
+										</sap.ui.layout.form:SimpleForm>
+									</content>
+								</IconTabFilter>
+							</items>
+						</IconTabBar>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
